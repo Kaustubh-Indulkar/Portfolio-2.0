@@ -53,7 +53,7 @@ export const ContactSection = () => {
 
             <div className="space-y-6 justify-center">
               {/* Email */}
-              <div className="flex items-start space-x-4 break-words">
+              <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
@@ -61,7 +61,8 @@ export const ContactSection = () => {
                   <h4 className="font-medium">Email</h4>
                   <a
                     href="mailto:kaustubhindulkar98@gmail.com"
-                    className="text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base break-words"
+                    className="text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base whitespace-nowrap overflow-hidden text-ellipsis block"
+                    style={{ maxWidth: "100%" }}
                   >
                     kaustubhindulkar98@gmail.com
                   </a>
